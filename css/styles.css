@@ -3,20 +3,36 @@ body{
     background-size: cover;
     
 }
-.hide-order,.hide-delivery{
-    display: none;
-}
+
 .main-content{
     display: inline-block;
     width: 100%;
 }
+/* form styles */
 .pizza-form{
-    width:70%;
+    width:50%;
+    background-color: tomato;
+    opacity: 0.7;
+    float: left;
 }
 .pizza-details{
-    width: 30%;
+    width: 50%;
+    float: right;
 }
-
+.mySlides {
+    
+    width: 40%;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+label{
+    font-weight: bolder;
+}
+small{
+    font-weight: bolder;
+    color: black;
+}
 select{
     width: 50%;
     background-color: white;
@@ -26,4 +42,35 @@ select{
 input[type="number"]{
     border-radius: 25px;
     border-color: tomato;
+    width: 50%;
+}
+form{
+    border: palegoldenrod solid 2px;
+}
+
+/* order details */
+.hide-order,.hide-deliver{
+    display: none;
+}
+.gallery{
+    display: inline-block;
+    width: 100%;
+   
+    
+}
+
+.jumbotron{
+    background: url(../images/bg.png);
+    /* background-position: center; */
+    background-size: cover;
+    font-family: 'Akronim';
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: xx-large;
+    color: black;
+    font-weight: bolder;
+    padding-left: 600px;
+    
+    
+    
 }

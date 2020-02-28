@@ -13,10 +13,88 @@
         </div>
         <div class="main-content">
             <div class="pizza-form">
+                <form id="myForm">
+                    <div class="form-group">
+                      <label for="size">Pizza Size</label>
+                      <select name="size" id="size">
+                        <option disabled selected value> -- Choose Pizza Size -- </option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                      </select>
+                      
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="crust">Crust Type</label>
+                        <select id="crust">
+                            <option disabled selected value> -- Choose Type of Crust -- </option>
+                            <option value="Crispy">Crispy</option>
+                            <option value="Stuffed">Stuffed</option>
+                            <option value="Gluten Free Crispy">Gluten Free Crispy</option>
+                            <option value="Gluten Free Stuffed">Gluten Free Stuffed</option>
+                        </select>
+  
+                    </div>
+                    <div class="form-group">
+                        <label for="toppings">Toppings</label>
+                        <select id="toppings">
+                            <option disabled selected value> -- Choose Toppings -- </option>
+                            <option value="BBQ Chicken">BBQ Chicken</option>
+                            <option value="BBQ Beef">BBQ Beef</option>
+                            <option value="BBQ Pork">BBQ Pork</option>
+                            <option value="Vegetarian">Vegetarian</option>
+                            <option value="Chicken Mushroom">Chicken Mushroom</option>
+                            <option value="Shrimp">Shrimp</option>
+                        </select>
+  
+                    </div>
+                    <div class="form-group">
+                      <label for="noOfPizzas">Number of Pizzas</label>
+                      <input type="number" name="noOfPizzas" id="noOfPizzas" class="form-control" min="0" placeholder="How many pizzas do you want?" aria-describedby="helpId">
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="delivery">Delivery</label><br>
+                      <small id="helpId" class="text-muted">Do you want delivery?</small><br>
+                      <div class="delivery-options">
+                        <input type="radio" name="delivery" id="Yes" value="Yes" onclick="myDelivery()">Yes
+                        <input type="radio" name="delivery" id="No" value="No">No
+                      </div>
+                      
+                      
+                      <div class="hide-delivery">
+                          <div class="form-group">
+                            <label for="location">Delivery Location</label>
+                            <input type="text" name="location" id="location" class="form-control" placeholder="Write delivery Location" aria-describedby="helpId">
+                            
+                          </div>
+
+                      </div>
+                      
+                    </div>
+                    <div class="form-group">
+                      <input type="submit" value="Checkout">
+                    </div>
+                </form>
+                
 
             </div>
             <div class="pizza-details">
-                
+                <div class="hide-order">
+                    <img src="images/close-up-photography-of-pizza-1166120.jpg" alt="">
+                    <div class="order details">
+                        <h6 class="ordersize"></h6>
+                        <h6 class="ordercrust"></h6>
+                        <h6 class="ordertoppings"></h6>
+                        <h6 class="ordernumber"></h6>
+                        <h6 class="orderlocation"></h6>
+                    </div>
+
+
+                </div>
+
             </div>
         </div>
     </body>

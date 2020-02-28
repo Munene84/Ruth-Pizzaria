@@ -16,3 +16,14 @@ body{
 .pizza-details{
     width: 30%;
 }
+
+select{
+    width: 50%;
+    background-color: white;
+    border-radius: 25px;
+    border-color: tomato;
+}
+input[type="number"]{
+    border-radius: 25px;
+    border-color: tomato;
+}

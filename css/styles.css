@@ -8,4 +8,11 @@ body{
 }
 .main-content{
     display: inline-block;
+    width: 100%;
+}
+.pizza-form{
+    width:70%;
+}
+.pizza-details{
+    width: 30%;
 }

@@ -1,0 +1,11 @@
+body{
+    background: url(../images/pizza-on-brown-wooden-table-3768007.jpg);
+    background-size: cover;
+    
+}
+.hide-order,.hide-delivery{
+    display: none;
+}
+.main-content{
+    display: inline-block;
+}

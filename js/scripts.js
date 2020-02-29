@@ -25,7 +25,7 @@ function Pizza(size,crust,number,delivery,orderLocation,tp1,tp2,tp3,tp4){
 
 //prototype
 Pizza.prototype.order=function(){
-    return ("Pizza size is: "+this.size+"\n\nCrust type: "+this.crust+"\n\n"+"Toppings: "+this.tp1+" "+this.tp2+" "+
+    return ("Pizza size: "+this.size+"\n\nCrust type: "+this.crust+"\n\n"+"Toppings: "+this.tp1+" "+this.tp2+" "+
     this.tp3+" "+this.tp4
     +"\n\n"+"Number of pizzas: "+this.number);
 }
@@ -254,6 +254,7 @@ $(document).ready(function(){
     $("#orderbtn").click(function(){
         $(".hide-order").hide();
         $(".pizza-form").show();
+        alert("Have a pizzaful day!");
         total=0;
         toppingsTotal=0;
         crustTotal=0;

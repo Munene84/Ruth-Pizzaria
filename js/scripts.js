@@ -211,6 +211,55 @@ $(document).ready(function(){
         }
         
     });
+    //form section
+    
+    $("form#myForm").submit(function(event){
+        event.preventDefault();
+        var size=$("#size").val();
+        var crust=$("#crust").val();
+        
+        var myNumber=$("#noOfPizzas").val();
+        var number=parseInt(myNumber);
+        
+        var t1=$("#tp1").prop("checked");
+        var t2=$("#tp2").prop("checked");
+        var t3=$("#tp3").prop("checked");
+        var t4=$("#tp4").prop("checked");
+        if(t1==false&&t2==false&&t3==false&&t4==false){
+            alert("Choose atleast one topping");
+            return;
+        }
+        
+        
+        var newPizza=new Pizza(size,crust,number,delivery,orderLocation,tp1,tp2,tp3,tp4); 
+        
+        sizeCheckout(size,number);
+        crustCheckout(crust,number);
+        toppingsCheckout(size,tp1,tp2,tp3,tp4,number);
+        deliveryCheckout(delivery);
+        Checkout(sizeTotal,crustTotal,toppingsTotal,deliveryTotal);
+        $(".pizza-form").hide();
+        $(".hide-order").show();
+
+        $(".order").text(newPizza.order())
+        $(".ordertotal").text(total);
+        
+        
+        $("#myForm").trigger("reset");
+
+
+
+    });
+
+    $("#orderbtn").click(function(){
+        $(".hide-order").hide();
+        $(".pizza-form").show();
+        total=0;
+        toppingsTotal=0;
+        crustTotal=0;
+        sizeTotal=0
+        deliveryTotal=0;
+    });
 
 
 

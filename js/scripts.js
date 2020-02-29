@@ -131,3 +131,11 @@ function deliveryCheckout(delivery){
         deliveryTotal=0
     }
 }
+
+//calculate total function
+
+function Checkout(sizeTotal,crustTotal,toppingsTotal,deliveryTotal){
+
+    total=sizeTotal+crustTotal+toppingsTotal+deliveryTotal;    
+            
+}

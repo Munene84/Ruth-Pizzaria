@@ -1,0 +1,9 @@
+var total=0;
+var sizeTotal=0;
+var crustTotal=0;
+var toppingsTotal=0;
+var deliveryTotal=0;
+var newTotal;
+var tp1="",tp2="",tp3="",tp4="";
+var delivery;
+var orderLocation

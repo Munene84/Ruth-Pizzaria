@@ -120,3 +120,14 @@ function toppingsCheckout(size,tp1,tp2,tp3,tp4,number){
 
     toppingsTotal=toppingsTotal*number
 }
+
+//delivery function
+
+function deliveryCheckout(delivery){
+    if (delivery==="Yes"){
+        deliveryTotal=deliveryTotal+50
+    }
+    else{
+        deliveryTotal=0
+    }
+}

@@ -54,3 +54,25 @@ form{
     
     padding-left: 30px;
 }
+/* order details */
+.hide-order{
+    display: none;
+    padding-left: 300px; 
+    font-family: "Sue Ellen Francisco";
+    background: url(../images/notepad.png);
+    background-size: cover;
+    background-position: center;
+    margin:0 auto;
+    width: 100%;
+}
+.hide-order h5,h3{
+    font-size: x-large;
+    font-weight: bolder;
+    color: black;
+    
+}
+.hide-order h2{
+    font-weight: bolder;
+    text-decoration: wavy black underline;
+    color: black;
+}

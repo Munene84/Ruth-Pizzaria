@@ -139,3 +139,25 @@ function Checkout(sizeTotal,crustTotal,toppingsTotal,deliveryTotal){
     total=sizeTotal+crustTotal+toppingsTotal+deliveryTotal;    
             
 }
+
+//user logic
+
+$(document).ready(function(){
+    //delivery 
+
+    $("#Yes").click(function(){
+        $(".hide-delivery").show();
+        alert("Delivery will cost you 50 shillings");
+        delivery=this.value;
+        
+
+    });
+    $("#No").click(function(){
+        $(".hide-delivery").hide();
+        delivery=""
+        
+    });
+
+
+
+});

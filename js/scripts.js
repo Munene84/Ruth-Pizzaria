@@ -70,3 +70,53 @@ function crustCheckout(crust,number){
 
     crustTotal=crustTotal*number
 }
+
+//toppings function
+function toppingsCheckout(size,tp1,tp2,tp3,tp4,number){
+    //switch statement for pizza topping //bbqchicken=90,110,130 bbqbeef=70,90,110 vegetarian=50,70,99 shrimp=100,120,140 
+    if (size==="Small"){
+        if(tp1==="BBQ Chicken"){
+            toppingsTotal=toppingsTotal+90;
+        }
+        if(tp2==="BBQ Beef"){
+            toppingsTotal=toppingsTotal+70;
+        }
+        if(tp3==="Vegetarian"){
+            toppingsTotal=toppingsTotal+50;
+        }
+        if(tp4==="Shrimp"){
+            toppingsTotal=toppingsTotal+100;
+        }
+    }
+    else if (size==="Medium"){
+        if(tp1==="BBQ Chicken"){
+            toppingsTotal=toppingsTotal+110;
+        }
+        if(tp2==="BBQ Beef"){
+            toppingsTotal=toppingsTotal+90;
+        }
+        if(tp3==="Vegetarian"){
+            toppingsTotal=toppingsTotal+70;
+        }
+        if(tp4==="Shrimp"){
+            toppingsTotal=toppingsTotal+120;
+        }
+    }
+    else if(size==="Large"){
+        if(tp1==="BBQ Chicken"){
+            toppingsTotal=toppingsTotal+130;
+        }
+        if(tp2==="BBQ Beef"){
+            toppingsTotal=toppingsTotal+110;
+        }
+        if(tp3==="Vegetarian"){
+            toppingsTotal=toppingsTotal+90;
+        }
+        if(tp4==="Shrimp"){
+            toppingsTotal=toppingsTotal+140;
+        }
+    }
+    else{alert("please select all boxes")}
+
+    toppingsTotal=toppingsTotal*number
+}

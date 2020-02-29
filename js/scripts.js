@@ -166,6 +166,51 @@ $(document).ready(function(){
         }
         
     });
+    //checkbox for toppings
+   
+    
+    $("#tp1").click(function(){
+        if($(this).prop("checked") == true){
+            tp1=this.value;
+             
+        }
+        else if($(this).prop("checked") == false){
+            tp1=""
+        }
+       
+    });  
+    
+    $("#tp2").click(function(){
+        if($(this).prop("checked") == true){
+            tp2=this.value;
+            
+        }
+        else if($(this).prop("checked") == false){
+            tp2="";
+        }
+        
+    });
+    $("#tp3").click(function(){
+        if($(this).prop("checked") == true){
+            tp3=this.value;
+            
+        }
+        else if($(this).prop("checked") == false){
+            tp3="";
+        }
+        
+    });  
+    
+    $("#tp4").click(function(){
+        if($(this).prop("checked") == true){
+            tp4=this.value;
+            
+        }
+        else if($(this).prop("checked") == false){
+            tp4="";
+        }
+        
+    });
 
 
 

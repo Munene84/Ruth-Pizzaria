@@ -106,3 +106,22 @@ form{
 .order{
     white-space: pre-wrap;
 }
+.ordertotal{
+    font-size: xx-large;
+}
+input[type="submit"],input[type="button"]{
+    border-radius: 25px;
+    border-color: tomato;
+    width: 20%;
+    background-image: url(../images/bg.png);
+    font-weight: bolder;
+}
+input[type="submit"]{
+    margin: auto;
+    text-align: center;
+}
+input[type="button"]{
+    width:50%;
+    height: 20%;
+    font-size: x-large;
+}

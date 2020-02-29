@@ -49,3 +49,24 @@ function sizeCheckout(size,number){
     
     
 }
+
+//crust function
+function crustCheckout(crust,number){
+    //switch statement for pizza crust //crispy=50 stuffed=70 glutencrispy=90 gluttenstuffed=110 
+    switch (crust){
+        case ("Crispy"):
+            crustTotal=crustTotal+50;
+            break;
+        case ("Stuffed"):
+            crustTotal=crustTotal+70;
+            break;
+        case ("Gluten Free Crispy"):
+            crustTotal=crustTotal+90;
+            break;
+        case ("Gluten Free Stuffed"):
+            crustTotal=crustTotal+110;
+            break;        
+    }
+
+    crustTotal=crustTotal*number
+}

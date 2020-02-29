@@ -38,3 +38,19 @@ body{
 label{
     font-weight: bolder;
 }
+select{
+    width: 70%;
+    background-color: white;
+    border-radius: 25px;
+    border-color: tomato;
+}
+input[type="number"],input[type="text"]{
+    border-radius: 25px;
+    border-color: tomato;
+    width: 70%;
+}
+
+form{
+    
+    padding-left: 30px;
+}

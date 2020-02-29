@@ -125,3 +125,13 @@ input[type="button"]{
     height: 20%;
     font-size: x-large;
 }
+.menu img{
+    width: 4%;
+}
+.menu{
+    font-family: "Sue Ellen Francisco"; 
+}
+.menu h4{
+    
+    text-align: justify;
+}

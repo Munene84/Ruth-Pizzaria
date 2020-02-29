@@ -76,3 +76,33 @@ form{
     text-decoration: wavy black underline;
     color: black;
 }
+
+.hide-delivery{
+    display: none;
+    
+}
+.gallery{
+    display: inline-block;
+    width: 100%;  
+    
+}
+
+
+.jumbotron{
+    /* background: url(../images/bg.png); */
+    background-color:rgba(0, 0, 0,0.4);
+    
+    background-size: cover;
+    font-family: 'Akronim';
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: xx-large;
+    color: whitesmoke;
+    height: 1px;
+    padding-left: 600px;
+  
+}
+
+.order{
+    white-space: pre-wrap;
+}

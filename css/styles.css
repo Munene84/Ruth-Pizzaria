@@ -93,12 +93,12 @@ form{
     background-color:rgba(0, 0, 0,0.4);
     
     background-size: cover;
-    font-family: 'Akronim';
+    font-family: 'Gloria Hallelujah';
     text-align: center;
-    letter-spacing: 10px;
-    font-size: xx-large;
-    color: whitesmoke;
-    height: 1px;
+    letter-spacing: 30px;
+    /* font-size: xx-large; */
+    color: #f3dfcd;
+    height: 170px;
     padding-left: 600px;
   
 }
@@ -126,12 +126,12 @@ input[type="button"]{
     font-size: x-large;
 }
 .menu img{
-    width: 4%;
+    width: 8%;
 }
 .menu{
-    font-family: "Sue Ellen Francisco"; 
-}
-.menu h4{
+    font-family: "Sue Ellen Francisco";
+    width: 100%; 
+    /* padding-left: 200px; */
     
-    text-align: justify;
 }
+

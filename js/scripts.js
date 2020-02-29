@@ -29,3 +29,23 @@ Pizza.prototype.order=function(){
     this.tp3+" "+this.tp4
     +"\n\n"+"Number of pizzas: "+this.number);
 }
+
+// size function
+function sizeCheckout(size,number){
+    //switch statement for pizza size //small=200 medium=400 large=600
+    switch (size){
+        case ("Small"):
+            sizeTotal=sizeTotal+200;
+            break;
+        case ("Medium"):
+            sizeTotal=sizeTotal+400;
+            break;
+        case ("Large"):
+            sizeTotal=sizeTotal+600;
+            break;
+    }
+    
+    sizeTotal=sizeTotal*number
+    
+    
+}

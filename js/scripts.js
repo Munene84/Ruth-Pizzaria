@@ -158,6 +158,15 @@ $(document).ready(function(){
         
     });
 
+    // location
+    $('#locationbtn').click(function() {
+        orderLocation=$("#location").val();
+        if (delivery==="Yes"){
+            alert(" Your order will be delivered to "+orderLocation+ " once you checkout"); 
+        }
+        
+    });
+
 
 
 });

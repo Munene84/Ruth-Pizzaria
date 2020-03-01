@@ -1,7 +1,8 @@
 body{
     background: url(../images/pizza-on-brown-wooden-table-3768007.jpg);
     background-size: cover;
-    display: grid;
+    
+    width: 100%;
     
 }
 
@@ -9,7 +10,7 @@ body{
     display: inline-block;
     width: 100%;
 }
-/* form styles */
+
 .pizza-form{
     width:50%;
     background-color: rgba(0, 99, 71, 0.3);
@@ -54,7 +55,7 @@ form{
     
     padding-left: 30px;
 }
-/* order details */
+
 .hide-order{
     display: none;
     padding-left: 300px; 
@@ -89,14 +90,12 @@ form{
 
 
 .jumbotron{
-    /* background: url(../images/bg.png); */
-    background-color:rgba(0, 0, 0,0.4);
     
+    background-color:rgba(0, 0, 0,0.4);
     background-size: cover;
     font-family: 'Gloria Hallelujah';
     text-align: center;
     letter-spacing: 30px;
-    /* font-size: xx-large; */
     color: #f3dfcd;
     height: 170px;
     padding-left: 600px;
@@ -126,12 +125,73 @@ input[type="button"]{
     font-size: x-large;
 }
 .menu img{
-    width: 8%;
+    width: 6%;
 }
 .menu{
     font-family: "Sue Ellen Francisco";
     width: 100%; 
-    /* padding-left: 200px; */
     
 }
+@media all and (max-width:600px){
+    body{
+        
+        display: flexbox;
+        padding: 0px;
+        width: 100%;
+        
+    }
+    .main-content,.jumbotron,.menu,.pizza-details{
+        width: 100%;
+        
+        float: left;
+        display: flexbox;
+        /* height: 535px; */
+        padding: 0px;
+        
+    }
+    .jumbotron h1{
+        text-align: center;
+        padding: 0px;
+        letter-spacing: 0px;
+    }
+    .pizza-form,.pizza-details{
+        width: 100%;
+    }
+    .hide-order{
+        padding: 0px;
+        text-align: center;
+    }
 
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    body,div{
+        
+        display: flexbox;
+        padding: 0px;
+        width: 100%;
+        
+    }
+    .main-content,.jumbotron,.menu,.pizza-details{
+        width: 100%;
+        
+        float: left;
+        display: flexbox;
+        
+        padding: 0px;
+        
+    }
+    .jumbotron h1{
+        text-align: center;
+        padding: 0px;
+        letter-spacing: 0px;
+    }
+    .pizza-form,.pizza-details{
+        width: 100%;
+    }
+    .hide-order{
+        padding: 0px;
+        text-align: center;
+    }
+
+}

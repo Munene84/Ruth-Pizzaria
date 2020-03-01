@@ -8,7 +8,7 @@ var tp1="",tp2="",tp3="",tp4="";
 var delivery;
 var orderLocation
 
-//business logic
+/*business logic*/
 
 //pizza constructor
 function Pizza(size,crust,number,delivery,orderLocation,tp1,tp2,tp3,tp4){
@@ -25,9 +25,8 @@ function Pizza(size,crust,number,delivery,orderLocation,tp1,tp2,tp3,tp4){
 
 //prototype
 Pizza.prototype.order=function(){
-    return ("Pizza size: "+this.size+"\n\nCrust type: "+this.crust+"\n\n"+"Toppings: "+this.tp1+" "+this.tp2+" "+
-    this.tp3+" "+this.tp4
-    +"\n\n"+"Number of pizzas: "+this.number);
+    return ("Number of pizzas: "+this.number+"\n\n"+"Pizza size: "+this.size+" = "+sizeTotal+"\n\nCrust type: "+this.crust+" = "+crustTotal+"\n\n"+"Toppings: "+this.tp1+" "+this.tp2+" "+
+    this.tp3+" "+this.tp4+" = "+toppingsTotal+"\n\n"+"Delivery: "+this.delivery+" = "+deliveryTotal);
 }
 
 // size function
@@ -140,7 +139,7 @@ function Checkout(sizeTotal,crustTotal,toppingsTotal,deliveryTotal){
             
 }
 
-//user logic
+/*user logic*/
 
 $(document).ready(function(){
     //delivery 
@@ -154,7 +153,7 @@ $(document).ready(function(){
     });
     $("#No").click(function(){
         $(".hide-delivery").hide();
-        delivery=""
+        delivery=this.value;
         
     });
 
@@ -240,14 +239,10 @@ $(document).ready(function(){
         Checkout(sizeTotal,crustTotal,toppingsTotal,deliveryTotal);
         $(".pizza-form").hide();
         $(".hide-order").show();
-
+        $(".hide-delivery").hide();
         $(".order").text(newPizza.order())
         $(".ordertotal").text(total);
-        
-        
         $("#myForm").trigger("reset");
-
-
 
     });
 
@@ -260,6 +255,10 @@ $(document).ready(function(){
         crustTotal=0;
         sizeTotal=0
         deliveryTotal=0;
+        tp1="";
+        tp2="";
+        tp3="";
+        tp4="";
     });
 
 
